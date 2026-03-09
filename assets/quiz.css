@@ -1,0 +1,76 @@
+.reveal section[data-quiz] .rq-answers {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  font-size: 17px;
+}
+
+.reveal section[data-quiz] .rq-answer {
+  border: 2px solid rgba(0,0,0,0.18);
+  border-radius: 12px;
+  padding: 12px 12px;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(0,0,0,0.03);
+}
+
+.reveal section[data-quiz] .rq-answer:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0,0,0,0.35);
+}
+
+.reveal section[data-quiz] .rq-answer.is-selected {
+  border-color: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.06);
+}
+
+.reveal section[data-quiz] .rq-answer.is-correct {
+  border-color: rgba(0, 128, 0, 0.55);
+  background: rgba(0, 128, 0, 0.10);
+}
+
+.reveal section[data-quiz] .rq-answer.is-wrong {
+  border-color: rgba(200, 0, 0, 0.55);
+  background: rgba(200, 0, 0, 0.10);
+}
+
+/* submit and score */
+.reveal section[data-quiz] .rq-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.reveal section[data-quiz] .rq-submit {
+  font-size: 17px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.04);
+  cursor: pointer;
+}
+
+.reveal section[data-quiz] .rq-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.reveal section[data-quiz] .rq-result {
+  font-size: 17px;
+}
+
+.reveal section[data-quiz] .rq-expl {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-left: 6px solid rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.03);
+  border-radius: 10px;
+  display: none;
+  font-size: 17px;
+}
+
+.reveal section[data-quiz] .rq-expl.is-visible {
+  display: block;
+}
