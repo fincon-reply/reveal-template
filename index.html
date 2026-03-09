@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title>HTML</title>
-    <link rel="stylesheet" href="assets/quiz.css" />
+    <link rel="stylesheet" href="assets/dist/reveal.css" />
+    <link rel="stylesheet" href="assets/dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="assets/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="assets/plugin/quiz/quiz.css" />
 </head>
 
 <body>
@@ -14,7 +17,13 @@
         </div>
     </div>
 
-    <script src="assets/quiz.js"></script>
+    <script src="assets/dist/reveal.js"></script>
+
+    <script src="assets/plugin/markdown/markdown.js"></script>
+    <script src="assets/plugin/highlight/highlight.js"></script>
+    <script src="assets/plugin/notes/notes.js"></script>
+
+    <script src="assets/plugin/quiz/quiz.js"></script>
     <script>
     Reveal.initialize({
         hash: true,
